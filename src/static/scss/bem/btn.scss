@@ -1,0 +1,76 @@
+.btn__main, .btn__empty, .btn__black, .btn__black-empty, .btn__white-empty {
+  background-color: $colorAccent;
+  border: none;
+  font-family: $fontMain;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 18px 45px; //18px
+  border-radius: 0;
+  transition: background .2s ease-in-out, color .2s ease-in-out, box-shadow .2s ease-in-out;
+  box-shadow: none;
+  letter-spacing: 0.05em;
+  position: relative;
+
+  &:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: $colorAccentHover;
+  }
+}
+.btn__black {
+  background-color: $colorBlack;
+  color: #fff;
+  &:hover {
+  background-color: ($colorBlack * 1.45);
+  }
+}
+.btn__empty {
+  background: transparent;
+  border: 2px solid $colorAccent;
+  color: $colorAccent;
+
+  &:hover {
+    color: #fff;
+    background-color: $colorAccent;
+  }
+}
+
+.btn__black-empty {
+  background: transparent;
+  border: 2px solid $colorBlack;
+  color: $colorBlack;
+  &:hover {
+    color: #fff;
+    background-color: $colorBlack;
+  }
+}
+.btn__white-empty {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  &:hover {
+    color: $colorBlack;
+    background-color: #fff;
+  }
+}
+.btn__big {
+  padding: 16px 55px;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.btn__big.btn__white-empty, .btn__big.btn__black-empty, .btn__big.btn__empty {
+  border-width: 3px;
+}
+.btn__shadow {
+  //box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.3), 0 3px 3px rgba(0, 0, 0, 0.15), 0 3px 2px -2px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  &:hover {
+    box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.3), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3);
+
+  }
+}

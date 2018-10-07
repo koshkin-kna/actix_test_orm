@@ -1,0 +1,35 @@
+$lh: 1.6;
+//$fontMain: "Roboto", Arial, sans-serif;
+$fontMain: "Roboto", Arial, sans-serif;
+$font2: 'PT Sans', sans-serif;
+$colorMain: #000;
+$colorAccent: #f3724c;
+$colorAccentHover: ($colorAccent * 1.15);
+$colorBlack: #212121;
+$XL: 1569px;
+$LG: 1199px;
+$MD: 991px;
+$SM: 767px;
+$XS: 566px;
+
+@import 'main/normalize.scss';
+@import 'main/add-normalize.scss';
+@import 'main/typography.scss';
+@import 'main/basegrid.scss';
+@import 'include/grid.scss';
+//@import 'main/paddingandmargin.scss';
+
+@import 'include/waves';
+@import 'include/fullmodal';
+//@import 'include/lightbox.scss';
+//@import 'include/modal.scss';
+//@import 'include/slick.scss';
+//@import 'include/offcanvas';
+
+@import 'bem/form.scss';
+@import 'bem/btn.scss';
+
+@import 'bem/header.scss';
+@import 'bem/box-start.scss';
+@import 'bem/box-offer.scss';
+@import 'bem/footer.scss';

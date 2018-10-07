@@ -1,0 +1,87 @@
+.header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding-left: 50px;
+  padding-right: 50px;
+  z-index: 3;
+  .container {
+    width:auto;
+  }
+}
+.header__logo {
+  float: left;
+  padding-top: 40px;
+}
+.header__logo-text-1 {
+
+  font-size: 24px;
+  font-family: $fontMain;
+  color: rgba(255, 255, 255, 0.87);
+  line-height: 1;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 4px;
+}
+.header__logo-text-2 {
+
+  font-size: 15px;
+  font-family: $colorMain;
+  color: rgba(255, 255, 255, 0.4);
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: 0.189em;
+
+}
+.header__callback {
+  padding-top: 40px;
+  float: right;
+  a {
+    font-family: $font2;
+        padding: 10px 40px;
+
+    border: 1px solid #fff;
+
+  }
+}
+@media screen and (max-width: $XL) {
+  .header {
+    padding-left: 0;
+    padding-right: 0;
+    .container {
+      width: 1170px;
+    }
+  }
+}
+@media screen and (max-width: $LG) {
+  .header .container {
+    width: 970px;
+  }
+}
+@media screen and (max-width: $MD) {
+  .header .container {
+    width: 750px;
+  }
+}
+@media screen and (max-width: $SM) {
+  .header .container {
+    width: 537px;
+  }
+}
+@media screen and (max-width: $XS) {
+  .header .container {
+    width: auto;
+  }
+  .header__logo {
+    float: none;
+    text-align: center;
+    padding-top: 30px;
+  }
+  .header__callback {
+    float: none;
+    text-align: center;
+    padding-top: 20px;
+  }
+}
